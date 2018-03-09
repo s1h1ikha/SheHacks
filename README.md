@@ -10,6 +10,6 @@ User submission of SheHacks
 - Type ```git add .```
 - ```git commit -m "Added team files"```
 - ```git push origin <team-name>```
-- Now goto your ```https://github.com/<your-github-handle>``` profile and create a pull request for the main repo.
+- Now goto your ```https://github.com/<your-github-handle>/SheHacks``` profile and create a pull request for the main repo.
 
 Need any help, contact anyone, we're around you. :smile:
