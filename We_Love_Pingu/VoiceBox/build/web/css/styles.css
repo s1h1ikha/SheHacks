@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+body,
+button {
+  font-family: 'Montserrat', sans-serif;
+}
+
+code[aria-hidden=true] {
+  opacity: 0;
+}
+
+.markup[aria-hidden=true] {
+  outline: none;
+}
+
+body {
+  padding: 0 1em;
+  line-height: 1.4;
+  max-width: 60em;
+  margin: 0 auto;
+}
+
+button {
+  border: none;
+  background: none;
+  border-bottom: 1px dashed rgba(255, 0, 0, 0.8);
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 0.8em;
+}
+
+a {
+  text-decoration: none;
+  color: #555;
+  border-bottom: 1px dashed rgba(255, 0, 0, 0.8);
+}
+
+a:hover,
+button:focus,
+button:hover {
+  outline: 1px solid rgba(255, 0, 0, 0.8);
+  border-bottom: 1px solid transparent;
+}
+
+.container,
+.container > div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container {
+  position: relative;
+  border: 3px dashed rgba(255, 0, 0, 0.8);
+  max-width: 100%;
+}
+
+.container > div {
+  flex: 1 1 100%;
+}
+.item ,  .item1 , .item2 , .item3, .item4, .item5 {
+  background: #555;
+  color: white;
+  padding: 1em;
+  text-align: center;
+  width: 100%;
+}
+.two-columns .item , .two-columns .item1 , .two-columns .item2 {
+  width: 50%;
+}
+
+.three-columns .item , .three-columns .item1 , .three-columns .item2 , .three-columns .item3{
+  width: calc(100% / 3);
+}
+
+.four-columns .item , .four-columns .item1 , .four-columns .item2 , .four-columns .item3 , .four-columns .item4 {
+  width: 25%;
+}
+
+.five-columns .item , .five-columns .item1 , .five-columns .item2 , .five-columns .item3 , .five-columns .item4 , .five-columns .item5 {
+  width: 20%;
+}
+
+.container:empty {
+  padding: 1em;
+}
+
+.no-support {
+  position: fixed;
+  bottom: -10em;
+  left: 50%;
+  transform: translate(-50%, 0);
+  transition: 1.5s;
+  background: rgba(238, 238, 238, 0.5);
+  width: 100%;
+  padding: 3em;
+  max-width: 60em;
+  box-shadow: 0 -8px 6px -8px rgba(0, 0, 0, 0.3);
+}
+
+.no-support[aria-hidden=false] {
+  transform: translate(-50%, -10em);
+}
